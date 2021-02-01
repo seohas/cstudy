@@ -8,14 +8,14 @@ int main(void)
 	double str1[SIZE] = { 0 };
 	for (int i = 0; i < SIZE; i++)
 	{
-		printf("½Ç¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		printf("ì‹¤ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤: ");
 		scanf_s("%lf", &str1[i]);
 	}
 	double m = py(str1, 5);
 	double boon, pyo;
 	cal(str1,5,m, &boon, &pyo);
-	printf("Æò±Õ:%lf ",m);
-	printf("ºÐ»ê:%lf ", pyo);
+	printf("í‰ê· :%lf ",m);
+	printf("ë¶„ì‚°:%lf ", pyo);
 
 
 }
