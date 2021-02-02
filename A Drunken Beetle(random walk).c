@@ -7,7 +7,7 @@ int randmove(int beetlepos);
 int main(void)
 {
 	printf("=====A Drunken Beetle=====(PRESS A TO START)\n");
-	char a = _getch();
+	char A = _getch();
 	char tile[10] = { '_' };
 	for (int i = 0; i < 10; i++)
 	{
