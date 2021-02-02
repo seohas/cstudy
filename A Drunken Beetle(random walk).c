@@ -9,10 +9,6 @@ int main(void)
 	printf("=====A Drunken Beetle=====(PRESS A TO START)\n");
 	char A = _getch();
 	char tile[10] = { '_' };
-	for (int i = 0; i < 10; i++)
-	{
-		tile[i] = '_';
-	}
 	int beetlepos = 4;
 	tile[beetlepos] = '*';
 	while (1)
