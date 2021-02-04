@@ -20,7 +20,6 @@ int main(void)
 	{
 		if (strcmp(dic[i][0], ans) == 0)
 		{
-			findflag = 1;
 			strcpy_s(kor, 50,dic[i][1]);
 			printf("%s: %s", ans, kor);
 			return 0;
