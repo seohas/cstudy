@@ -14,7 +14,7 @@ int main(void)
 		
 	}
 	sentence[k] = 0;
-
+	printf("과도한 공백이 제거된 텍스트: ");
 	printf("%s", sentence);
 	return 0;
 }
