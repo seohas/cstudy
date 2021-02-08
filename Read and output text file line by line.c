@@ -11,7 +11,7 @@ int main(void)
 	int count = 0;
 	if (fp == NULL)
 	{
-		fprintf(stderr, "ÆÄÀÏ line.txt¸¦ ¿­ ¼ö ¾ø½À´Ï´Ù.");
+		fprintf(stderr, "íŒŒì¼ line.txtë¥¼ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		exit(1);
 	}
 	while (fgets(buffer, 100, fp) != 0)
@@ -21,7 +21,7 @@ int main(void)
 		count++;
 	} 
 
-	printf("¶óÀÎÀÇ °³¼ö: %d°³", count);
+	printf("ë¼ì¸ì˜ ê°œìˆ˜: %dê°œ", count);
 	fclose(fp);
 	return 0;
 }
