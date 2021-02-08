@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #define _CRT_SEQURE_NO_WARNINGS
 #include <stdio.h>
-#define SIZE 10
 int main(void)
 {
 	char buffer[100];
