@@ -11,18 +11,18 @@ int main(void)
 	fp = fopen("employee.txt", "w");
 	if (fp == NULL)
 	{
-		printf("employee.txt ÆÄÀÏÀ» ¿­ ¼ö ¾ø½À´Ï´Ù.");
+		printf("employee.txt íŒŒì¼ì„ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		exit(0);
 	}
 	do {
-		printf("\nÁ÷¿ø ÀÌ¸§: ");
+		printf("\nì§ì› ì´ë¦„: ");
 		scanf_s("%s", name, 30);
-		printf("³ªÀÌ: ");
+		printf("ë‚˜ì´: ");
 		scanf_s("%d", &age);
-		printf("¿ù±Ş: ");
+		printf("ì›”ê¸‰: ");
 		scanf_s("%d", &salary);
 		fprintf(fp, "%s %d %d", name, age, salary);
-		printf("µ¥ÀÌÅÍ Ãß°¡¸¦ °è¼ÓÇÏ½Ã°Ú½À´Ï±î? (y/n): ");
+		printf("ë°ì´í„° ì¶”ê°€ë¥¼ ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n): ");
 		ch = getche();
 	} while (ch!='n');
 	fclose(fp);
