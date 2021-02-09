@@ -6,6 +6,10 @@ int main(void)
 	char buffer[100];
 	FILE* fp = NULL;
 	fp = fopen("line.txt", "r");
+	//==입력받을때==
+	//printf("파일의 이름을 입력하시오: ");
+	//scanf_s("%s", file,sizeof(file));
+	//fp = fopen(file,"r");
 	int c;
 	int count = 0;
 	if (fp == NULL)
