@@ -11,19 +11,19 @@ int main(void)
 	char buffer2[100];
 	FILE* fp1, *fp2;
 	char file1[100], file2[200];
-	printf("Ã¹¹øÂ° ÆÄÀÏ ÀÌ¸§: ");
+	printf("ì²«ë²ˆì§¸ íŒŒì¼ ì´ë¦„: ");
 	scanf_s("%s", file1, 100);
-	printf("µÎ¹øÂ° ÆÄÀÏ ÀÌ¸§: ");
+	printf("ë‘ë²ˆì§¸ íŒŒì¼ ì´ë¦„: ");
 	scanf_s("%s", file2, 100);
 	fp1 = fopen(file1, "r");
 	fp2 = fopen(file2, "r");
 	if (fp1 == NULL)
 	{
-		fprintf(stderr, "ÆÄÀÏ %s¸¦ ¿­ ¼ö ¾ø½À´Ï´Ù.\n", file1);
+		fprintf(stderr, "íŒŒì¼ %së¥¼ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n", file1);
 	}
 	if (fp2 == NULL)
 	{
-		fprintf(stderr, "ÆÄÀÏ %s¸¦ ¿­ ¼ö ¾ø½À´Ï´Ù.\n", file2);
+		fprintf(stderr, "íŒŒì¼ %së¥¼ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n", file2);
 	}
 	int findflag = 0;
 	while (fgets(buffer1, 100, fp1) != 0)
@@ -41,7 +41,7 @@ int main(void)
 	}
 	if (findflag == 0)
 	{
-		printf("%s¿Í %s´Â ÀÏÄ¡ÇÕ´Ï´Ù.",file1, file2);
+		printf("%sì™€ %sëŠ” ì¼ì¹˜í•©ë‹ˆë‹¤.",file1, file2);
 	}
 	fclose(fp1);
 	fclose(fp2);
