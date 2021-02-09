@@ -15,6 +15,7 @@ int main(void)
 	if (fp == NULL)
 	{
 		fprintf(stderr, "파일 line.txt를 열 수 없습니다.");
+		//fprintf(stderr,"파일 %s를 열 수 없습니다.", file);
 		exit(1);
 	}
 	while (fgets(buffer, 100, fp) != 0)
