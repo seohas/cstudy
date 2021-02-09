@@ -10,12 +10,12 @@ int main(void)
 	FILE* fp;
 	char file[100];
 	char buffer[1000];
-	printf("ÆÄÀÏ ÀÌ¸§À» ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("íŒŒì¼ ì´ë¦„ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf_s("%s", file, sizeof(file));
 	fp = fopen(file, "w");
 	if (fp == NULL)
 	{
-		fprintf(stderr, "ÆÄÀÏ %s¸¦ ¿­ ¼ö ¾ø½À´Ï´Ù.\n", file);
+		fprintf(stderr, "íŒŒì¼ %së¥¼ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n", file);
 		exit(0);
 	}
 	getchar();
