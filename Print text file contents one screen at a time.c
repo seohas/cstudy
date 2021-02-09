@@ -1,21 +1,19 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #define _CRT_SEQURE_NO_WARNINGS
 #include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
 #include <string.h>
-#define SIZE 10
 int main(void)
 {
 	char buffer[100];
 	char file[30];
 	FILE* fp = NULL;
-	printf("ÆÄÀÏÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ½Ã¿À: ");
+	printf("íŒŒì¼ì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf_s("%s", file, sizeof(file));
 	fp = fopen(file,"r");
 	if (fp == NULL)
 	{
-		fprintf(stderr,"ÆÄÀÏ %s¸¦ ¿­ ¼ö ¾ø½À´Ï´Ù.", file);
+		fprintf(stderr,"íŒŒì¼ %së¥¼ ì—´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.", file);
 		exit(1);
 	}
 	int count = 0;
@@ -25,7 +23,7 @@ int main(void)
 		printf("%d: %s\n",count, buffer);
 		if (count %14==0)
 		{
-			printf("°è¼ÓÇÏ·Á¸é ¾Æ¹« Å°³ª ´©¸£¼¼¿ä....\n");
+			printf("ê³„ì†í•˜ë ¤ë©´ ì•„ë¬´ í‚¤ë‚˜ ëˆ„ë¥´ì„¸ìš”....\n");
 			char ch = getch();
 			continue;
 		}
